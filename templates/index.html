@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <form action="/proceso" method="post" class="col-6 mx-auto">
+        <form action="/proceso" method="post" class="col-6">
             <h1>Nuevo Usuario</h1>
             <div class="form-group">
                 <label for="idnombre">Nombre:</label>
@@ -23,6 +23,24 @@
                 <label for="idemail">Email:</label>
                 <input type="email" name="email" class="form-control" id="idemail">
             </div>
+            <input type="hidden" name="tipo_usuario" value="vip">
+            <input type="submit" value="Enviar" class="btn btn-success">
+        </form>
+        <form action="/proceso" method="post" class="col-6">
+            <h1>Nuevo Usuario</h1>
+            <div class="form-group">
+                <label for="idnombre">Nombre:</label>
+                <input type="text" name="nombre" class="form-control" id="idnombre">
+            </div>
+            <div class="form-group">
+                <label for="idapellido">Apellido:</label>
+                <input type="text" name="apellido" class="form-control" id="idapellido">
+            </div>
+            <div class="form-group">
+                <label for="idemail">Email:</label>
+                <input type="email" name="email" class="form-control" id="idemail">
+            </div>
+            <input type="hidden" name="tipo_usuario" value="normal">
             <input type="submit" value="Enviar" class="btn btn-success">
         </form>
     </div>
